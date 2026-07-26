@@ -64,7 +64,7 @@ class IntroModal(discord.ui.Modal):
         self.play_time = discord.ui.TextInput(
             label="⏰ 접속 시간",
             style=discord.TextStyle.paragraph,
-            placeholder="예: 평일 10:00 ~ 19:00 / 주말 09:00 ~ 00:00",
+            placeholder="예: 평일 10:00 ~ 19:00 / 주말 09:00 ~ 00:00 (24시간제로 기재)",
             max_length=200,
             required=True
         )
