@@ -87,7 +87,7 @@ class IntroModal(discord.ui.Modal):
         embed = discord.Embed(
             title=f"✨ {interaction.user.display_name} 님의 프로필",
             description="서버에 새 멤버가 프로필을 등록했습니다!",
-            color=discord.Color.from_rgb(114, 137, 218),
+            color=discord.Color.from_rgb(0, 0, 0),
             timestamp=discord.utils.utcnow()
         )
         embed.set_thumbnail(url=interaction.user.display_avatar.url)
