@@ -141,7 +141,7 @@ async def on_ready():
         panel_embed = discord.Embed(
             title="📋 서버 프로필 / 자기소개 등록",
             description=(
-                "아래 **[📝 자기소개 작성하기]** 버튼을 눌러 양식을 작성해 주세요. / 봇 오류 시 현 이(jiu_108) DM 주세요.\n"
+                "아래 **[📝 자기소개 작성하기]** 버튼을 눌러 양식을 작성해 주세요.\n"
                 "제출된 자기소개는 퇴사후 1개월정도 보관됩니다.\n\n"
                 "**📌 작성 항목**\n"
                 "• **인게임 닉네임**\n"
@@ -151,7 +151,7 @@ async def on_ready():
             ),
             color=discord.Color.green()
         )
-        panel_embed.set_footer(text="버튼을 누르면 작성 팝업창이 나타납니다.")
+        panel_embed.set_footer(text="버튼을 누르면 작성 팝업창이 나타납니다. /  / 봇 오류 시 현 이(jiu_108) DM 주세요.")
         await panel_channel.send(embed=panel_embed, view=IntroPanelView())
 
 # --------------------------------------------------
