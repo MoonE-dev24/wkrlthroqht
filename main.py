@@ -43,28 +43,28 @@ class IntroModal(discord.ui.Modal):
         self.game_nickname = discord.ui.TextInput(
             label="🎮 인게임 닉네임",
             placeholder="예: 현이",
-            max_length=50,
+            max_length=15,
             required=True
         )
         
         self.user_id_num = discord.ui.TextInput(
             label="🔢 고유번호",
             placeholder="예: 227",
-            max_length=50,
+            max_length=10,
             required=True
         )
         
         self.age = discord.ui.TextInput(
             label="🎂 나이",
-            placeholder="예: 20대 / 24세",
-            max_length=20,
+            placeholder="예: 20",
+            max_length=3,
             required=True
         )
 
         self.play_time = discord.ui.TextInput(
             label="⏰ 접속 시간",
             style=discord.TextStyle.paragraph,
-            placeholder="예: 평일 저녁 8시 ~ 12시 / 주말 자유",
+            placeholder="예: 평일 10:00 ~ 19:00 / 주말 09:00 ~ 00:00",
             max_length=200,
             required=True
         )
@@ -104,7 +104,7 @@ class IntroModal(discord.ui.Modal):
 
         await result_channel.send(embed=embed)
         await interaction.response.send_message(
-            f"✅ 프로필 작성이 완료되었습니다! {result_channel.mention} 채널에서 확인해 보세요.", 
+            f"✅ 프로필 작성이 완료되었습니다!", 
             ephemeral=True
         )
 
@@ -142,7 +142,7 @@ async def on_ready():
             title="📋 서버 프로필 / 자기소개 등록",
             description=(
                 "아래 **[📝 자기소개 작성하기]** 버튼을 눌러 양식을 작성해 주세요.\n"
-                "제출된 프로필은 지정된 채널에 예쁘게 정리되어 게시됩니다.\n\n"
+                "제출된 자기소개는 퇴사후 1개월정도 보관됩니다.\n\n"
                 "**📌 작성 항목**\n"
                 "• **인게임 닉네임**\n"
                 "• **고유번호**\n"
