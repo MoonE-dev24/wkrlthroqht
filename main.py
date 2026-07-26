@@ -149,7 +149,7 @@ async def on_ready():
                 "• **나이**\n"
                 "• **접속 시간**"
             ),
-            color=discord.Color.green()
+            color=discord.Color.from_rgb(0, 23, 255)
         )
         panel_embed.set_footer(text="버튼을 누르면 작성 팝업창이 나타납니다. / 봇 오류 시 현 이(jiu_108) DM 주세요.")
         await panel_channel.send(embed=panel_embed, view=IntroPanelView())
